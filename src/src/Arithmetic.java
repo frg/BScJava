@@ -12,8 +12,8 @@ public class Arithmetic {
 	}
 	
 	public double Subtract(double subThese[]){
-		double sub = 0;
-		for(int i = 0; i < subThese.length; i++) {
+		double sub = subThese[0];
+		for(int i = 1; i < subThese.length; i++) {
 			sub -= subThese[i];
 		}
 		
