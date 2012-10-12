@@ -47,5 +47,18 @@ public class Arithmetic {
 		return avrg/avrgThese.length;
 	}
 	
-	
+	public int MarkClassifier(int mark){
+		int grade = -1;
+		
+		if (mark > 40)
+			grade  = 4;
+		if (mark > 60) 
+			grade  = 3;
+		if (mark > 70)
+			grade  = 2;
+		if (mark > 80) 
+			grade  = 1;
+			
+		return grade;
+	}
 }

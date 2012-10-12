@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String args[]){
 		Arithmetic math = new Arithmetic();
+		
+		System.out.println("Grade: " + math.MarkClassifier(62));
+		
 		//Number of required inputs
 		int inAmount = 2;
 		
