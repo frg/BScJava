@@ -61,4 +61,20 @@ public class Arithmetic {
 			
 		return grade;
 	}
+	
+	public double TempConvertor1F2C(int scale, double temp ){
+		//F = (9/5)C + 32
+		double conversion = Double.MAX_VALUE;
+		
+		//Scale = 1 for Fahrenheit. Scale = 2 for Celsius
+		switch (scale){
+			case 1: conversion = temp/(9/5) -32;
+					break;
+			case 2: conversion = (9/5)*temp + 32;
+					break;
+			default: conversion = Double.MAX_VALUE;
+		}
+		
+		return conversion;
+	}
 }
